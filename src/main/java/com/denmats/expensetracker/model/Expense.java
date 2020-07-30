@@ -29,4 +29,8 @@ public class Expense {
 
     @Column(name="created_at")
     private Long createdAt;
+
+    public void setCreatedAt(long currentTimeMillis) {
+        this.createdAt = System.currentTimeMillis();
+    }
 }
